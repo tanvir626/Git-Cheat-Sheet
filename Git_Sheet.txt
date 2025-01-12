@@ -1,0 +1,32 @@
+# Step 1: Push the main branch to the remote repository
+git push -u origin main
+
+# Step 2: Create and switch to a new branch
+git checkout -b branchname
+
+# Step 3: Pull changes from a remote branch into the current branch
+git pull origin branchname
+
+# Step 4: Adjust the post buffer size globally (if needed)
+git config --global http.postBuffer 524288000
+
+# Step 5: Pull a specific commit from the remote repository
+git pull origin 17f51a60f5d985a1ed3247a20f8508a1a5f1ec31
+
+# Step 6: View commit history in a compact format
+git log --oneline
+
+# Step 7: Push the current branch to the remote repository
+git push
+
+# Step 8: Switch to an existing branch
+git switch branchname
+
+# Step 9: Cherry-pick a specific commit into the current branch
+git cherry-pick <commit-hash-1>
+
+# Optional: Cherry-pick multiple commits at once
+git cherry-pick <commit-hash-1> <commit-hash-2>
+
+# Step 10: Create and switch to a new branch
+git checkout -b branchname

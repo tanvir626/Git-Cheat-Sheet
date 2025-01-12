@@ -1,3 +1,7 @@
+#Step 0: Git Clone 
+git clone link
+git clone -b branchname link
+
 # Step 1: Push the main branch to the remote repository
 git push -u origin main
 
